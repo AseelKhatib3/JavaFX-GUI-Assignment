@@ -94,9 +94,9 @@ Below is an example of how the interface looks:
 
 ## 🎬 Demo
 
-Click below to watch the demo:
+https://github.com/AseelKhatib3/JavaFX-GUI-Assignment/raw/main/Screen%20Recording.mov
 
-[▶️ Watch Demo](Screen%20Recording%20.mov)
+
 
 
 ---
