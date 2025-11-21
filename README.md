@@ -96,7 +96,7 @@ Below is an example of how the interface looks:
 
 Click here to watch the demo:
 
-[▶️ Watch Demo](https://github.com/USERNAME/REPO/releases/download/v1.0/ScreenRecording.mp4)
+[▶️ Watch Demo](https://github.com/USERNAME/REPO/releases/download/v1.0/ScreenRecording.mov)
 
 
 ---
