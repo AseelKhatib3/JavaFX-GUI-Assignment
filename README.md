@@ -96,7 +96,7 @@ Below is an example of how the interface looks:
 
 *(GitHub will show your uploaded image automatically)*  
 
-![App Screenshot](Screenshot 2025-11-21 at 20.08.42.png)
+![App Screenshot](Screenshot.png)
 
 ---
 
