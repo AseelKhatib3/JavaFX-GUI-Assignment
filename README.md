@@ -93,10 +93,8 @@ Below is an example of how the interface looks:
 ---
 
 ## 🎬 Demo Video
+👉 [Click here to watch the demo](https://github.com/AseelKhatib3/JavaFX-GUI-Assignment/releases/download/v1.0/ScreenRecording.mov)
 
-Watch a full walkthrough of the app showcasing all user roles and features:
-
-👉 [Click here to watch the demo](https://github.com/username/repo/releases/download/v1.0/ScreenRecording.mov)
 
 
 ---
