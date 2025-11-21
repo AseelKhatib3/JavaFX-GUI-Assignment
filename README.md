@@ -92,9 +92,12 @@ Below is an example of how the interface looks:
 
 ---
 
-## 🎬 Demo
+## 🎬 Demo Video
 
-[▶️ Watch Demo](https://raw.githubusercontent.com/AseelKhatib3/JavaFX-GUI-Assignment/main/ScreenRecording.mov)
+Click here to watch the demo:
+
+[▶️ Watch Demo](https://github.com/USERNAME/REPO/releases/download/v1.0/ScreenRecording.mp4)
+
 
 ---
 
