@@ -102,14 +102,10 @@ Below is an example of how the interface looks:
 
 ## 🎬 Demo
 
-A short demo of the app in action is included below (or you may upload a GIF/video if you have one):
+Click below to watch the demo:
 
-👉 The demo shows:
-- Text movement
-- Color changes
-- Font size updates
-- Bold/Italic toggles
-- ComboBox color selection
+[▶️ Watch Demo](Screen%20Recording%20.mov)
+
 
 ---
 
