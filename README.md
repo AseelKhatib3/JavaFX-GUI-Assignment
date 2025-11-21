@@ -94,8 +94,6 @@ git clone <your-repo-link>
 
 Below is an example of how the interface looks:
 
-*(GitHub will show your uploaded image automatically)*  
-
 ![App Screenshot](Screenshot.png)
 
 ---
