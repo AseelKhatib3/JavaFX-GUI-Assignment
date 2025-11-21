@@ -75,18 +75,12 @@ Pressing these buttons moves the text inside the center pane.
 
 ---
 
-## 📦 How to Run the Project
+## 🚀 How to Run the Project
 
-1. Clone or download this repository  
+1. **Clone or download this repository**
+   ```bash
+   git clone https://github.com/USERNAME/REPOSITORY.git
 
-git clone <your-repo-link>
-
-2. Open the project in **Eclipse** or **IntelliJ**
-
-3. Make sure JavaFX is configured in your IDE  
-(add the JavaFX SDK to your module path)
-
-4. Run the project through:
 
 ---
 
