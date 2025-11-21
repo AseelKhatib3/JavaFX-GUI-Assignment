@@ -94,9 +94,9 @@ Below is an example of how the interface looks:
 
 ## 🎬 Demo Video
 
-Click here to watch the demo:
+Watch a full walkthrough of the app showcasing all user roles and features:
 
-[▶️ Watch Demo](https://github.com/USERNAME/REPO/releases/download/v1.0/ScreenRecording.mov)
+👉 [Click here to watch the demo](https://github.com/username/repo/releases/download/v1.0/ScreenRecording.mov)
 
 
 ---
