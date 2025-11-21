@@ -1,93 +1,119 @@
-# JavaFX GUI Assignment — Text Styler & Controller
+# 🎨 JavaFX GUI Text Styler
 
-Interactive JavaFX desktop application that allows users to style and move text in real-time.  
-The app demonstrates modular JavaFX components, dynamic font control, color selection, style toggles, and directional movement controls — ideal as a university assignment or demo project.
-
----
-
-## 🚀 Features
-
-- Dynamic font-size input (live updates while typing)
-- Color selection via radio buttons and combo box
-- Bold / Italic toggles (mutually exclusive behaviour in UI logic)
-- Directional arrow controls for moving the text (up/down/left/right)
-- Modular code organisation — separate classes for top, left, right panels and grid controls
-- Easy-to-run desktop JavaFX application
+This project is an interactive **JavaFX GUI application** that allows users to fully style and control text on the screen.  
+The application demonstrates clean GUI structuring, event handling, component modularization, and dynamic styling using JavaFX.
 
 ---
 
-## 🧭 How it works (high level)
+## ✨ Features
 
-The application UI is composed of modular components:
-
-- `topClass` — contains the font-size input and its layout.
-- `leftClass` — radio buttons for color selection.
-- `comboClass` — a ComboBox color selector.
-- `rightClass` — Bold / Italic checkboxes (toggle effect handled in the main controller).
-- `gridPaneClass` — arrow buttons arranged in a grid to move the text; includes a `TextArea` for messages.
-- `Main` — composes all components into a `BorderPane`, wires event handlers, and controls the `Text` node.
-
-**Key UI behaviour (what the code does):**
-- When the user types a number in the font-size field, the `Text` font is updated live.
-- Selecting a color from either the radio buttons or the combo box sets the `Text` color (the combo box clears the radio selection and vice versa).
-- Bold and Italic checkboxes set the `Text` font weight or posture, and unselect the opposite style when chosen.
-- Arrow buttons call simple handlers that change `text.setX(...)` and `text.setY(...)` to move the displayed text on the pane.
+✔ Change text color (via **Radio Buttons**)  
+✔ Select color from a **ComboBox**  
+✔ Change font size dynamically  
+✔ Apply **Bold** or **Italic** styles  
+✔ Move the text in 4 directions using arrow buttons  
+✔ Clean UI with organized regions (Top, Bottom, Left, Right, Center)  
+✔ Fully object-oriented design — each GUI section is its own class  
 
 ---
 
-## 🧠 About the "Dynamic" explanation (if you previously implemented DP)
+## 🧱 Project Structure
 
-If you also included dynamic programming logic (e.g., for a different assignment in the same repo), explain it like this in the README:
+The project is divided into separate reusable JavaFX components:
 
-**Dynamic Programming Overview**  
-This repository demonstrates an algorithmic solution to an optimization problem using Dynamic Programming. The approach used:
-
-1. **Problem modelling** — Represent the problem state(s) as an indexable structure (e.g., matrix or array).  
-2. **Transition relation** — For each state `i, j` compute the best value using previously computed states (for example, Floyd–Warshall updates `cost[i][j] = min(cost[i][j], cost[i][k] + cost[k][j])`).  
-3. **Table reconstruction** — Keep a `next` or `parent` table for reconstructing the actual optimal route after the DP values are computed.  
-4. **Complexity** — Provide the time/space complexity (for Floyd–Warshall it's `O(N^3)` time and `O(N^2)` space).  
-5. **Output** — The program prints the optimal solution, alternative paths, and shows the full DP table.
-
-(If you want, I can merge your actual DP files and give a tailored explanation referencing the exact class and method names used.)
+### **`Main.java`**
+- Builds the main layout using `BorderPane`
+- Connects all GUI components together
+- Handles all event listeners (color changes, movement, font size, bold/italic, combo box)
+- Displays the styled text in the center pane
 
 ---
 
-## 🛠 Technologies & Tools
-
-- **Java** (JDK 8+ or 11+ recommended)
-- **JavaFX** (matching your JDK version — if using modular Java, set the module path or use an SDK that bundles JavaFX)
-- IDE: **Eclipse / IntelliJ / VS Code**
-- Build (optional): Maven / Gradle (not required, project runs from IDE)
-
----
-
-## ▶️ How to run
-
-### Option A — Run from your IDE (recommended)
-1. Open the project folder in your IDE (File → Open → select repository folder).
-2. Make sure JavaFX libraries are available (set JDK / module path according to your setup).
-3. Run `application.Main` (right-click → Run as Java Application).
-
-### Option B — Command line (assuming JavaFX setup and JDK installed)
-> This depends on your JavaFX distribution. If you're using a modular JavaFX SDK, include `--module-path` and `--add-modules javafx.controls,javafx.fxml`.
-
-Example (not modular):
-```bash
-# From project root
-javac -cp "path/to/javafx-sdk/lib/*" -d bin $(find src -name "*.java")
-java -cp "bin:path/to/javafx-sdk/lib/*" application.Main
+### **`topClass.java`**
+A horizontal bar that contains:
+- A label: *“Enter the font size:”*
+- A text field to input font size  
+- Updates the text size dynamically when typing
 
 ---
 
-## 🔥 Demo / Screenshot
-
-**Live demo (quick view)**: run the `Main` class in your IDE (Eclipse / IntelliJ / VS Code with JavaFX setup) to open the GUI.
-
-**Main screenshot** (included in the repository as `screen1.png`):
-
-![App Screenshot](./screen1.png)
+### **`leftClass.java`**
+Vertical sidebar that contains:
+- RadioButtons for selecting color  
+  - 🔴 Red  
+  - 🟢 Green  
+  - 🔵 Blue  
+- Handles color selection and applies it to the main text
 
 ---
-✨ **Developed by Aseel Khatib**
 
+### **`comboClass.java`**
+Contains a **ComboBox** with the same color options:
+- Red  
+- Green  
+- Blue  
+Selecting a color updates the text immediately.
 
+---
+
+### **`rightClass.java`**
+Contains two large styled CheckBoxes:
+- **Bold**  
+- **Italic**  
+Ensures that only one can be active at a time.
+
+---
+
+### **`gridPaneClass.java`**
+A section at the bottom containing arrow-image buttons:
+- ⬅️ Left  
+- ➡️ Right  
+- ⬆️ Up  
+- ⬇️ Down  
+
+Pressing these buttons moves the text inside the center pane.
+
+---
+
+## 📦 How to Run the Project
+
+1. Clone or download this repository  
+
+git clone <your-repo-link>
+
+2. Open the project in **Eclipse** or **IntelliJ**
+
+3. Make sure JavaFX is configured in your IDE  
+(add the JavaFX SDK to your module path)
+
+4. Run the project through:
+
+---
+
+## 🖼️ Screenshot
+
+Below is an example of how the interface looks:
+
+*(GitHub will show your uploaded image automatically)*  
+
+![App Screenshot](Screenshot 2025-11-21 at 20.08.42.png)
+
+---
+
+## 🎬 Demo
+
+A short demo of the app in action is included below (or you may upload a GIF/video if you have one):
+
+👉 The demo shows:
+- Text movement
+- Color changes
+- Font size updates
+- Bold/Italic toggles
+- ComboBox color selection
+
+---
+
+## 👩‍💻 Developed By  
+**Aseel Khatib**
+
+---
